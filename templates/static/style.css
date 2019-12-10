@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
 }
 nav a{
-
+    text-decoration: none;
 }
 menu{
     display: inline-block;
@@ -36,7 +36,7 @@ menu{
 
 /* title and headline */
 h1{
-    font-family: blackwood_castle_shadowRg;
+    font-family: blackwood_castle_shadowRg, 'Times New Roman', Times, serif ;
     text-align: center;
     font-size: 9vw;
 }
@@ -60,8 +60,9 @@ article.card img{
 /* footer */
 footer{
     background-color: white;
-    position: fixed;
+    /* position: absolute; */
     display: flex;
+    align-self: flex-end;
     bottom: 0;
     width: 100vw;
     box-shadow: 0 -8px 30px 5px lightgrey;

@@ -1,0 +1,79 @@
+@import "../../static/fonts/mont/stylesheet.css";
+
+/*desktop*/
+@media screen  and (min-width: 1020px){
+    body{
+        overflow-x: hidden;
+    }
+    /* nav bar */
+    nav{
+        padding: 0 15px;
+        padding-top: 10px;
+        /* align-items: flex-start; */
+        height: 60px;
+    }
+    .logo-crop{
+        height: 40px;
+        overflow: hidden;
+    }
+    #logo{
+        position: relative;
+        bottom: 12px;
+        max-width: 50px;
+    }
+    nav a{
+        display: flex;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 12px;
+        align-self: center;
+    }
+    menu{
+        height: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        font-size: 40px;
+        color: grey;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }   
+    #menu li {
+        font-size: 20px;
+        margin: 0 20px;
+        align-self: center;
+    }
+    /* title */
+    h1{
+        margin: 15vh 18px 0;
+    }
+
+    /* archive */
+    section.archive{
+        width: 80vw;
+        margin-bottom: 10vh;
+    }
+    section.archive article.card{
+        height: 15vw;
+        width: 15vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+        font-size: 30px;
+    }
+}
