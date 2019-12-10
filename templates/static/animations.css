@@ -1,0 +1,18 @@
+/* need to wrap in media query for desktop sizes and on up */
+
+/* drop down menu */
+.inactive{
+    display: none;
+}
+
+/* card animations */
+.hoverd{
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    -moz-transition: transform .25s ease-in-out;
+    -webkit-transition: transform .25s ease-in-out;
+}
+.hoverd:hover {
+    z-index: 100;
+    transform: scale(1.2);
+}

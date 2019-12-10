@@ -1,0 +1,47 @@
+/* mobile */
+@media screen  and (max-width: 415px){
+    /* nav bar */
+    nav{
+        padding: 0 15px;
+        padding-top: 10px;
+        /* align-items: flex-start; */
+        height: 70px;
+    }
+    .logo-crop{
+        height: 50px;
+        overflow: hidden;
+    }
+    #logo{
+        position: relative;
+        bottom: 12px;
+        max-width: 60px;
+    }
+    #hamburger{
+        font-size: 40px;
+        color: grey;
+    }
+    /* title */
+    h1{
+        margin: 15vh 18px 0;
+    }
+
+    /* archive */
+    section.archive article.card{
+        height: 33vw;
+        width: 33vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+        font-size: 30px;
+    }
+
+
+}

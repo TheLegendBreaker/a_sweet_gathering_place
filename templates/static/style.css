@@ -1,0 +1,74 @@
+/*-------------------------------font---------------------------------- */
+@import "../../static/fonts/blackwood-castle-shadow/stylesheet.css";
+@import "../../static/fonts/mont/stylesheet.css";
+
+/*-------------------------base styling----------------------- */
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: mont_regular, Arial, Helvetica, sans-serif;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* nav bar */
+nav{
+    border-bottom: lightgrey 1px solid;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 200;
+    /* flex */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+nav a{
+
+}
+menu{
+    display: inline-block;
+}
+
+/* title and headline */
+h1{
+    font-family: blackwood_castle_shadowRg;
+    text-align: center;
+    font-size: 9vw;
+}
+/* archive */
+section.archive{
+    margin: 10vh auto 0 auto;
+
+    /* flex */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+article.card{
+    border: white 3px solid;
+    overflow: hidden;
+}
+article.card img{
+    max-width: 100%;
+}
+
+/* footer */
+footer{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100vw;
+    box-shadow: 0 -8px 30px 5px lightgrey;
+}
+footer a {
+    text-decoration: none;
+}
+.sm-icon{
+    color: gray;
+}
