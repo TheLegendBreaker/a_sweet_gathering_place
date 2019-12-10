@@ -1,25 +1,19 @@
-@import "../../static/fonts/mont/stylesheet.css";
-
 /*desktop*/
 @media screen  and (min-width: 1020px){
-    body{
-        overflow-x: hidden;
-    }
     /* nav bar */
     nav{
-        padding: 0 15px;
+        padding: 0 30px;
         padding-top: 10px;
-        /* align-items: flex-start; */
-        height: 60px;
+        height: 70px;
     }
     .logo-crop{
-        height: 40px;
+        height: 50px;
         overflow: hidden;
     }
     #logo{
         position: relative;
-        bottom: 12px;
-        max-width: 50px;
+        bottom: 18px;
+        max-width: 70px;
     }
     nav a{
         display: flex;
@@ -52,12 +46,16 @@
     }
     /* title */
     h1{
+        font-size: 5vw;
         margin: 15vh 18px 0;
+    }
+    span.headline{
+        font-size: 1vw;
     }
 
     /* archive */
     section.archive{
-        width: 80vw;
+        width: 75vw;
         margin-bottom: 10vh;
     }
     section.archive article.card{

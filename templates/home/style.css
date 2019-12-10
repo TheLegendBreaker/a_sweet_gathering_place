@@ -4,14 +4,3 @@
 
 /* responsive animations */
 @import "../static/animations.css";
-
-/*--------------page element styling------------------*/
-
-/* title and headline */
-span.headline{
-    display: block;
-    text-align: center;
-    font-size: 3vw;
-    width: 90vw;
-    margin: 0 auto;
-}

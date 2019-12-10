@@ -1,7 +1,5 @@
-@import "../../static/fonts/mont/stylesheet.css";
-
 /* mobile */
-@media screen  and (max-width: 415px){
+@media screen  and (max-width: 700px){
     body{
         overflow-x: none;
     }
@@ -9,7 +7,6 @@
     nav{
         padding: 0 15px;
         padding-top: 10px;
-        /* align-items: flex-start; */
         height: 70px;
     }
     .logo-crop{

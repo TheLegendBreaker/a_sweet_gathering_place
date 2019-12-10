@@ -1,13 +1,11 @@
 /* mobile */
-@media screen  and (max-width: 415px){
-    body{
-        overflow-x: none;
-    }
+@media screen  and (max-width: 700px){
     /* nav bar */
     nav{
         padding: 0 15px;
         padding-top: 5px;
         height: 55px;
+        border-bottom: lightgray solid 2px;
     }
     h1.main-title{
         color: black;
@@ -33,19 +31,22 @@
         font-size: 40px;
         color: grey;
     }
-    #menu{
+    #single-menu{
         position: relative;
         width: 30vw;
         top: 10vh;
         background-color: white;
-        height: 17vh;
+        height: 15vh;
         list-style-type: none;
     }   
-    #menu li {
+    #single-menu li {
         font-size: 4vw;
     }
-    #menu li a{
+    #single-menu li a{
         margin: 10px auto;
+    }
+    #single-menu.inactive{
+        display: none;
     }
    
     /* entry card */

@@ -40,6 +40,13 @@ h1{
     text-align: center;
     font-size: 9vw;
 }
+span.headline{
+    display: block;
+    text-align: center;
+    font-size: 3vw;
+    width: 90vw;
+    margin: 0 auto;
+}
 /* archive */
 section.archive{
     margin: 10vh auto 0 auto;

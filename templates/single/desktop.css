@@ -1,70 +1,86 @@
-@import "../../static/fonts/mont/stylesheet.css";
-
-/*desktop*/
 @media screen  and (min-width: 1020px){
-    body{
-        overflow-x: hidden;
-    }
     /* nav bar */
-    nav{
-        padding: 0 15px;
-        padding-top: 10px;
-        /* align-items: flex-start; */
-        height: 60px;
+    nav.single-nav{
+        padding: 0 40px;
+        padding-top: 5px;
+        height: 10vh;
+        border-bottom: lightgrey solid 3px;
     }
-    .logo-crop{
-        height: 40px;
-        overflow: hidden;
-    }
-    #logo{
-        position: relative;
-        bottom: 12px;
-        max-width: 50px;
+    h1.main-title{
+        color: black;
+        font-size: 2vw;
+        margin: none;
     }
     nav a{
         display: flex;
+        align-self: center;
         flex-direction: row;
     }
     small{
         color: grey;
-        font-size: 12px;
+        font-size: 8px;
         align-self: center;
     }
     menu{
-        height: 100%;
         display: flex;
         align-self: center;
     }
-    #hamburger{
-        font-size: 40px;
-        color: grey;
+    #single-burger{
+        display: none;
     }
-    #menu{
+    #single-menu{
+        position: static;
+        height: 100%;
+        width: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         list-style-type: none;
     }   
-    #menu li {
-        font-size: 20px;
-        margin: 0 20px;
-        align-self: center;
+    #single-menu li {
+        font-size: 1vw;
     }
-    /* title */
-    h1{
-        margin: 15vh 18px 0;
+    #single-menu li a{
+        width: auto;
+        margin: 10px;
     }
+    #single-menu.inactive{
+        display: flex;
+    }
+    /* entry card */
+    section.entry{
+        margin: 15vh 0 8vh 0;
+    }
+    section.entry figure img{
+        display: block;
+        margin: 0 auto;
+        width: 30vw;
+    }
+    section.entry article.card figcaption{
+        font-size: 2vw;
+        display: block;
+        text-align: center;
+        font-family: blackwood_castle_shadow, 'Times New Roman', Times, serif;
+    }
+    time{
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+    .description{
+        width: 30vw;
+        font-size: 1.5vw;
+        margin: 3vh auto;
+    }
+    nav.entry-nav{
+        border:none;
+        position: static;
+        padding: 0 35vw;
 
-    /* archive */
-    section.archive{
-        width: 80vw;
-        margin-bottom: 10vh;
     }
-    section.archive article.card{
-        height: 15vw;
-        width: 15vw;
+    nav.entry-nav a{
+        font-family: mont_heavy, Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        width:auto;
     }
-
     /* footer */
     footer{
         padding: 12px 15px;
