@@ -16,6 +16,10 @@
     transform: scale(1.1);
 }
 
+.dim{
+    filter: brightness(50%);
+}
+
 /* desktop */
 @media screen and (min-width: 1030px){
     /* card animations */
