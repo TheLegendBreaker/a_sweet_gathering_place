@@ -13,7 +13,9 @@
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
+body{
+    height: 100vh;
+}
 /* nav bar */
 nav{
     border-bottom: lightgrey 1px solid;
@@ -67,10 +69,11 @@ article.card img{
 /* footer */
 footer{
     background-color: white;
+    z-index: 300;
     /* position: absolute; */
     display: flex;
     align-self: flex-end;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100vw;
     box-shadow: 0 -8px 30px 5px lightgrey;
 }

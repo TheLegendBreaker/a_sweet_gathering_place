@@ -1,4 +1,4 @@
-@media screen  and (min-width: 1020px){
+@media screen  and (min-width: 1025px){
     /* nav bar */
     nav.single-nav{
         padding: 0 40px;
@@ -45,30 +45,86 @@
     #single-menu.inactive{
         display: flex;
     }
-    /* entry card */
-    section.entry{
-        margin: 15vh 0 8vh 0;
+    /* main content contianer */
+    main{
+        margin: 20vh 0 5vh 0;
+        display: flex;
+        flex-direction: row;
+        /* flex-flow: row wrap; */
+        justify-content: space-evenly;
     }
-    section.entry figure img{
-        display: block;
-        margin: 0 auto;
-        width: 30vw;
+    section{
+        display: inline-block;
+        /* outline: lightblue dotted 3px; */
     }
-    section.entry article.card figcaption{
-        font-size: 2vw;
-        display: block;
-        text-align: center;
-        font-family: blackwood_castle_shadow, 'Times New Roman', Times, serif;
+    
+    /* visual content */
+    section.visual-content{
+        width: 45vw;
     }
-    time{
-        display: block;
-        text-align: center;
-        font-size: 12px;
+    section.visual-content article.card{
+        margin: 20px auto;
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
-    .description{
-        width: 30vw;
-        font-size: 1.5vw;
-        margin: 3vh auto;
+    p.cta{
+        width: 20vw;
+        align-self: center;
+    }
+    div.vid{
+        background-color: lightpink;
+        height: 380px;
+        width: 380px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* -moz-box-shadow:    inset 0 0  10px 10px white;
+        -webkit-box-shadow: inset 0 0  10px 10px white; */
+        /* box-shadow:         inset 0 0  8px 10px white; */
+    }
+    section.visual-content img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* about content */
+    hr{
+        display: none;
+    }
+    section.about{
+        
+        width: 45vw;
+    }
+    section.about article.card{
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        margin: 20px auto;
+    }
+    #about1{
+        width: auto;
+    }
+    #about2{
+        width: auto;
+    }
+    aside{
+        align-self: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        height: 400px;
+        width: 20vw;
+    }
+    nav.about-nav{
+        margin-top: 50px;
+        order: 4;
+        align-self: flex-end;
+        flex: 1 0 100%;
+    }
+    div.map{
+        background-color: lightpink;
     }
     nav.entry-nav{
         border:none;
