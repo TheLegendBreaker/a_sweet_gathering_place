@@ -1,4 +1,4 @@
-@media screen  and (min-width: 1025px){
+@media screen  and (min-width: 1620px){
     /* nav bar */
     nav.single-nav{
         padding: 0 40px;
@@ -104,40 +104,30 @@
         margin: 20px auto;
     }
     #about1{
+        margin: 20px 0;
         width: auto;
     }
     #about2{
+        margin: 20px 0;
         width: auto;
     }
     aside{
         align-self: center;
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-around;
-        height: 400px;
         width: 20vw;
     }
     nav.about-nav{
         margin-top: 50px;
         order: 4;
         align-self: flex-end;
+        padding: 0;
         flex: 1 0 100%;
     }
     div.map{
         background-color: lightpink;
     }
-    nav.entry-nav{
-        border:none;
-        position: static;
-        padding: 0 35vw;
-
-    }
-    nav.entry-nav a{
-        font-family: mont_heavy, Arial, Helvetica, sans-serif;
-        font-size: 1.5vw;
-        width:auto;
-    }
-    /* footer */
+        /* footer */
     footer{
         padding: 12px 15px;
         justify-content: space-evenly;
