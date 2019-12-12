@@ -1,8 +1,10 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="../static/style.css">
-    <link rel="stylesheet" href="style.css">
+    {% includeCssFile siteUrl"/static/style.css" %}
+    {% includeCssFile siteUrl"/home/style.css" %}
+    {# <link rel="stylesheet" href="{{ siteUrl }}/static/style.css">
+    <link rel="stylesheet" href="{{ siteUrl }}/home/style.css"> #}
 {% endblock %}
 
 {% block logo %}

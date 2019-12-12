@@ -1,4 +1,21 @@
-{% extends '_single_nav' %}
+{% extends '_layout' %}
+
+{% block stylesheets %}
+    {% includeCssFile siteUrl"/static/style.css" %}
+    {% includeCssFile siteUrl"/single/style.css" %}
+{% endblock %}
+
+{% block logo %}
+    <h1 class="main-title hoverd">A Sweet Gathering Place</h1>
+{% endblock %}
+
+{% block nav_menu %}
+    <li><a href="../home/index.html">home</a></li>
+    <li><a href="../single/index.html">pervious</a></li>
+    <li><a href="../single/index.html">next</a></li>
+    <li><a href="../about/index.html">about</a></li>
+{% endblock %}
+
 {% block main %}
     <!-- entry -->
     <section class="entry">
@@ -18,4 +35,9 @@
             </nav>
         </article>
     </section>
-{% endblock %}  
+{% endblock %}
+
+{% block javascript %}
+    <script src="../static/main.js"></script>
+    <script src="main.js"></script>
+{% endblock %}

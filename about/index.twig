@@ -1,5 +1,19 @@
-{% extends '_about_nav' %}
-{% block nav %}
+{% extends '_layout' %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+{% block logo %}
+    <h1 class="main-title hoverd">A Sweet Gathering Place</h1>
+{% endblock %}
+
+{% block nav_menu %}
+    <li><a class="press" href="../home/index.html">home</a></li>
+    <li><a class="press" href="../about/index.html">about</a></li>
+{% endblock %}
+
+{% block main %}
     <!-- main content -->
     <main>
         <section class="visual-content">
@@ -46,3 +60,8 @@
         </section>
     </main>
 {% endblock %} 
+
+{% block javascript %}
+    <script src="../static/main.js"></script>
+    <script src="main.js"></script>
+{% endblock %}
