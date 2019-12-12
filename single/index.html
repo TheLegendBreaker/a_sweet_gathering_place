@@ -8,19 +8,46 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="style.css">
-    <title>home</title>
+    <title>entry title</title>
 </head>
 <body>
-   
-    {% block nav %}
-
-    {% endblock %}
-
-    {% block main %}
-
-    {% endblock %}
-    
-   <footer>
+    <!-- nav bar -->
+    <nav class="single-nav">
+        <a href="../home/index.html">
+            <h1 class="main-title hoverd">A Sweet Gathering Place</h1>
+        </a>
+        <menu>
+            <div class="burger-listener">
+                <i id="single-burger" class="material-icons">menu</i>
+            </div>
+            <ul id="single-menu" class="inactive" >
+                <li><a href="../home/index.html">home</a></li>
+                <li><a href="../single/index.html">pervious</a></li>
+                <li><a href="../single/index.html">next</a></li>
+                <li><a href="../about/index.html">about</a></li>
+            </ul>
+        </menu>
+    </nav>
+    <!-- entry -->
+    <section class="entry">
+        <article class="card">
+            <figure>
+                <img src="../../static/imgs/IMG_2478.JPEG" alt="">
+                <figcaption>title 
+                </figcaption>
+                <time>11/11/11</time>
+            </figure>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi laboriosam voluptatem reprehenderit, facere minima beatae nobis. Accusantium cumque sapiente iste magni eius consequatur adipisci nisi, ipsam natus nobis maiores!</p>
+            <nav class="entry-nav">
+                <a href="index.html" class="previous press">previous</a>
+                <a href="index.html" class="next press">
+                    next
+                </a>
+            </nav>
+        </article>
+    </section>
+    <!-- footer -->
+    <footer>
         <a href="https://www.facebook.com/indiancreektherapeutics/">
             <i class="sm-icon press fab fa-facebook-f"></i>
         </a>
@@ -41,11 +68,8 @@
         </a> -->
     </footer>
 </body>
-<!-- <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script> -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../static/main.js"></script>
 <script src="main.js"></script>
+<script src="../static/main.js"></script>
 </html>
