@@ -6,16 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/4b8a8366c7.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="stylesheet" href="style.css">
+    {% block stylesheets %}
+    
+    {% endblock %}
     <title>home</title>
 </head>
 <body>
-   
-    {% block nav %}
-
-    {% endblock %}
-
+    <nav>
+        <a href="index.html">
+        {% block logo %}
+            
+        {% endblock %}
+        </a>
+        <menu>
+            <i id="hamburger" class="material-icons">menu</i>
+            <ul id="menu" class="inactive"
+                style="display: none;">
+                {% block nav_menu %}
+                
+                {% endblock %}
+            </ul>
+        </menu>
+    </nav>
+  
     {% block main %}
 
     {% endblock %}
@@ -41,11 +54,8 @@
         </a> -->
     </footer>
 </body>
-<!-- <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../static/main.js"></script>
-<script src="main.js"></script>
+{% block javascript %}
+
+{% endblock %}
 </html>
