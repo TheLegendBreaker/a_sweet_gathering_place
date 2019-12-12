@@ -1,7 +1,6 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% includeCssFile ""~siteUrl~"/static/style.css" %}
     {% includeCssFile ""~siteUrl~"/home/style.css" %}
 {% endblock %}
 
@@ -87,6 +86,5 @@
 {% endblock %}
 
 {% block javascript %}
-    <script src="../static/main.js"></script>
-    <script src="main.js"></script>
+    {% includeJsFile ""~siteUrl~"/home/main.js" %}
 {% endblock %}

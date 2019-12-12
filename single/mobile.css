@@ -26,12 +26,12 @@
         display: flex;
         align-self: center;
     }
-    #single-burger{
+    #hamburger{
         align-self: flex-start;
         font-size: 40px;
         color: grey;
     }
-    #single-menu{
+    #menu{
         position: relative;
         width: 30vw;
         top: 10vh;
@@ -39,13 +39,13 @@
         height: 15vh;
         list-style-type: none;
     }   
-    #single-menu li {
+    #menu li {
         font-size: 4vw;
     }
-    #single-menu li a{
+    #menu li a{
         margin: 10px auto;
     }
-    #single-menu.inactive{
+    #menu.inactive{
         display: none;
     }
    

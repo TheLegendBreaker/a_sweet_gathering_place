@@ -25,24 +25,24 @@
         display: flex;
         align-self: center;
     }
-    #single-burger{
+    #hamburger{
         display: none;
     }
-    #single-menu{
+    #menu{
         position: static;
         height: 100%;
         width: auto;
         display: flex;
         list-style-type: none;
     }   
-    #single-menu li {
+    #menu li {
         font-size: 1vw;
     }
-    #single-menu li a{
+    #menu li a{
         width: auto;
         margin: 10px;
     }
-    #single-menu.inactive{
+    #menu.inactive{
         display: flex;
     }
     /* entry card */
