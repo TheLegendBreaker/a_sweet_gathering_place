@@ -20,14 +20,17 @@
     <section class="entry">
         <article class="card">
             <figure>
-                <img src="../../static/imgs/IMG_2478.JPEG" alt="">
-                <figcaption>title 
+                <img src="{{ entry.image.one().url }}" alt="">
+                <figcaption>{{ entry.title }}
                 </figcaption>
                 <time>11/11/11</time>
             </figure>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi laboriosam voluptatem reprehenderit, facere minima beatae nobis. Accusantium cumque sapiente iste magni eius consequatur adipisci nisi, ipsam natus nobis maiores!</p>
+            <p class="headline">{{ entry.headline }}</p>
+            <p class="description">
+                {{ entry.copy }}
+            </p>
             <nav class="entry-nav">
-                <a href="index.html" class="previous press">previous</a>
+                <a href="" class="previous press">previous</a>
                 <a href="index.html" class="next press">
                     next
                 </a>

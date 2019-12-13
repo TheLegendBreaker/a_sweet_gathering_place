@@ -1,6 +1,6 @@
 /*-------------------------------font---------------------------------- */
-@import "../../static/fonts/blackwood-castle-shadow/stylesheet.css";
-@import "../../static/fonts/mont/stylesheet.css";
+@import "fonts/blackwood-castle-shadow/stylesheet.css";
+@import "fonts/mont/stylesheet.css";
 
 /*-------------------------base styling----------------------- */
 *{

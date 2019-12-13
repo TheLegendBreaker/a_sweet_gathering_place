@@ -1,6 +1,11 @@
+/*@import "../static/fonts/blackwood-castle-shadow/stylesheet.css";*/
 @import "mobile.css";
 @import "tablet.css";
 @import "desktop.css";
 
 /* responsive animations */
-@import "../static/animations.css";
+@import "static/animations.css";
+
+/*h1{
+    font-family:  blackwood_castle_shadow, 'Times New Roman', Times, serif ;
+}*/

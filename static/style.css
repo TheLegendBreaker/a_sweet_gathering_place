@@ -1,6 +1,8 @@
 /*-------------------------------font---------------------------------- */
-@import "../../static/fonts/blackwood-castle-shadow/stylesheet.css";
-@import "../../static/fonts/mont/stylesheet.css";
+/*@import "fonts/blackwood_castle_shadow_moz/stylesheet.css";*/
+@import "fonts/blackwood-castle-shadow/stylesheet.css";
+@import "fonts/blackwood-castle/stylesheet.css";
+@import "fonts/mont/stylesheet.css";
 
 /*-------------------------base styling----------------------- */
 *{
@@ -38,7 +40,7 @@ menu{
 
 /* title and headline */
 h1{
-    font-family: blackwood_castle_shadow, 'Times New Roman', Times, serif ;
+    font-family:  blackwood_castle, 'Times New Roman', Times, serif ;
     text-align: center;
     font-size: 9vw;
 }

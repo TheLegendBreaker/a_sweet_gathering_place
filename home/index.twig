@@ -12,77 +12,33 @@
 {% endblock %}
 
 {% block nav_menu %}
-    <li><a href="../home/index.html">home</a></li>
-    <li><a href="../about/index.html">about</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="/about">about</a></li>
 {% endblock %}
 
 {% block main %}
    <!-- title and headline -->
     <h1 class="main-title">A Sweet Gathering Place</h1>
-    <span class="headline">Indian Creek Theraputics entry to The Flying M Coffee Garage Gingerbread sucpture contest</span>
+    <span class="headline">{{ entry.headline }}</span>
 
     <section class="archive">
-        <a href="../single/" class="entry-link">
+
+        {% set entries =  craft.entries()
+            .section('process')
+            .limit(null)
+            .all()
+        %}
+
+	{% for entry in entries %}
+        <a href="{{ entry.url }}" class="entry-link">
             <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
+                {% for image in entry.image %}
+                <img class="img" src="{{ image.url }}" alt="">
+                {% endfor %}
             </article>
         </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img class="img" src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img src="../../static/imgs/IMG_2478.JPEG" alt="">
-            <menu/article>
-        </a>
-        <a href="../single/" class="entry-link">
-            <article class="card hoverd">
-                <img src="../../static/imgs/IMG_2478.JPEG" alt="">
-            </article>
-        </a>
-    </section>
+        {% endfor %}
+     </section>
 {% endblock %}
 
 {% block javascript %}

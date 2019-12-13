@@ -1,3 +1,5 @@
+console.log('home main js file read');
+
 $('#hamburger').click(function(){
     $(this).toggle(300);
     $('#menu').toggle(300);

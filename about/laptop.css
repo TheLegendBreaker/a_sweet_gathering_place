@@ -1,5 +1,5 @@
-/* tablet */
-@media screen  and (min-width: 700px){
+/* laptop */
+@media screen  and (min-width: 1020px){
     /* nav bar */
     nav{
         padding: 0 15px;
@@ -28,25 +28,24 @@
         align-self: center;
     }
     #hamburger{
-        align-self: flex-start;
-        font-size: 40px;
-        color: grey;
+        display: none;
     }
     #menu{
-        position: relative;
-        top: 10vh;
-	padding: 15px;
-        background-color: white;
         list-style-type: none;
-    }   
+	position: static;
+	background-color: none;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+    }
     #menu li {
-        font-size: 4vw;
+        font-size: 2vw;
     }
     #menu li a{
-        margin: 10px auto;
-    }
-    #menu.inactive{
-        display: none;
+	width: auto;
+        margin: 0 20px;
     }
    
     /* main content contianer */
