@@ -4,14 +4,25 @@
     {% do view.registerCssFile(""~siteUrl~"/single/style.css") %}
 {% endblock %}
 
+{% set params = craft.entries.section('process').orderBy('postDate asc') %}
+
+{% set previous= entry.getPrev(params) %}
+{% set next= entry.getNext(params) %}
+
 {% block logo %}
     <h1 class="main-title hoverd">A Sweet Gathering Place</h1>
 {% endblock %}
 
 {% block nav_menu %}
     <li><a href="/">home</a></li>
-    <li><a href="">pervious</a></li>
-    <li><a href="">next</a></li>
+    
+    {% if previous %}
+    <li><a href="{{ previous.url }}">previous</a></li>
+    {% endif %}		
+    {% if next %}
+    <li><a href="{{ next.url }}">next</a></li>
+    {% endif %}
+
     <li><a href="/about">about</a></li>
 {% endblock %}
 
@@ -23,15 +34,19 @@
                 <img src="{{ entry.image.one().url }}" alt="">
                 <figcaption>{{ entry.title }}
                 </figcaption>
-                <time>11/11/11</time>
+                <time>{{entry.postDate | date("M d, Y") }}</time>
             </figure>
             <p class="headline">{{ entry.headline }}</p>
                 {{ entry.copy }}
             <nav class="entry-nav">
-                <a href="" class="previous press">previous</a>
-                <a href="index.html" class="next press">
+		{% if previous %}
+                <a href="{{ previous.url }}" class="previous press">previous</a>
+                {% endif %}
+                {% if next %}
+                <a href="{{ next.url }}" class="next press">
                     next
                 </a>
+                {% endif %}
             </nav>
         </article>
     </section>

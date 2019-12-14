@@ -1,19 +1,22 @@
-/*desktop*/
-@media screen  and (min-width: 1020px){
+/* mobile */
+@media screen  and (max-width: 700px){
+    body{
+        overflow-x: none;
+    }
     /* nav bar */
     nav{
-        padding: 0 30px;
+        padding: 0 15px;
         padding-top: 10px;
         height: 70px;
     }
     .logo-crop{
-        height: 50px;
+        height: 48px;
         overflow: hidden;
     }
     #logo{
         position: relative;
-        bottom: 18px;
-        max-width: 70px;
+        bottom: 12.6px;
+        max-width: 60px;
     }
     nav a{
         display: flex;
@@ -21,7 +24,7 @@
     }
     small{
         color: grey;
-        font-size: 12px;
+        font-size: 8px;
         align-self: center;
     }
     menu{
@@ -30,7 +33,9 @@
         align-self: center;
     }
     #hamburger{
-	display: none;
+        align-self: flex-start;
+        font-size: 40px;
+        color: grey;
     }
     #menu{
         display: flex;
@@ -38,31 +43,26 @@
         justify-content: space-evenly;
         list-style-type: none;
     }   
+    #menu i.close-menu {
+	padding: 5px;
+    }
     #menu li {
         font-size: 20px;
-        margin: 0 20px;
-        align-self: center;
-    }
-    #menu i.close-menu{
-    	display:none;
+        margin: 5px;
     }
     /* title */
     h1{
-        font-size: 5vw;
+        font-family: blackwood_castle;
         margin: 15vh 18px 0;
-    }
-    span.headline{
-        font-size: 1vw;
     }
 
     /* archive */
     section.archive{
-        width: 75vw;
         margin-bottom: 10vh;
     }
     section.archive article.card{
-        height: 15vw;
-        width: 15vw;
+        height: 33vw;
+        width: 33vw;
     }
 
     /* footer */

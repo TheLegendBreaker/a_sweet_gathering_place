@@ -19,10 +19,12 @@
         <section class="visual-content">
             <article class="card">
                 <div class="vid">
-                    <img src="../../static/imgs/a_sweet_gathering_place_dreamy.gif" alt="">
+                    {% if entry.image.one() %}
+                    <img src="{{ entry.image.one().url }}" alt="">
+                    {% endif %}
                 </div>
                 <p class="cta">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quasi temporibus itaque enim amet porro beatae ?
+                    {{ entry.story }}
                 </p>
             </article>
         </section>
@@ -30,13 +32,10 @@
                 <hr>
             <article id="about-card" class="card">
                 <p id="about1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Et excepturi laboriosam voluptatem reprehenderit, facere 
+                    {{ entry.callToAction }}
                 </p>
                 <p id="about2">
-                    minima beatae nobis. Accusantium cumque sapiente iste 
-                    magni eius consequatur adipisci nisi, ipsam natus nobis 
-                    maiores!
+                    {{ entry.moreInfo }}
                 </p>
                 <aside id="desk-display"></aside>
                 <div class="map">

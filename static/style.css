@@ -1,7 +1,7 @@
 /*-------------------------------font---------------------------------- */
 /*@import "fonts/blackwood_castle_shadow_moz/stylesheet.css";*/
 @import "fonts/blackwood-castle-shadow/stylesheet.css";
-@import "fonts/blackwood-castle/stylesheet.css";
+@import "fonts/Blackwood-Castle/stylesheet.css";
 @import "fonts/mont/stylesheet.css";
 
 /*-------------------------base styling----------------------- */
@@ -37,10 +37,13 @@ nav a{
 menu{
     display: inline-block;
 }
-
+#menu i.close-menu{
+    color: grey;
+}
 /* title and headline */
 h1{
-    font-family:  blackwood_castle, 'Times New Roman', Times, serif ;
+    font-weight: normal;
+    font-family: blackwood_castle_shadow, blackwood_castle, 'Times New Roman', Times, serif ;
     text-align: center;
     font-size: 9vw;
 }
@@ -75,7 +78,7 @@ footer{
     position: relative;
     display: flex;
     align-self: flex-end;
-    bottom: 0;
+    bottom: 0; 
     width: 100vw;
     box-shadow: 0 -8px 30px 5px lightgrey;
 }
