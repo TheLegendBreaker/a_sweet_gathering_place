@@ -1,7 +1,7 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% includeCssFile ""~siteUrl~"/about/style.css" %}
+    {% do view.registerCssFile(""~siteUrl~"/about/style.css") %}
 {% endblock %}
 
 {% block logo %}
@@ -62,5 +62,5 @@
 {% endblock %} 
 
 {% block javascript %}
-    {% includeJsFile ""~siteUrl~"/about/main.js" %}
+    {% do view.registerJsFile(""~siteUrl~"/about/main.js") %}
 {% endblock %}

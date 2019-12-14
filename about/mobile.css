@@ -57,7 +57,7 @@
         flex-flow: wrap;
     }
 
-    /* visual content */
+    /* story */
     section.visual-content{
         width: 100vw;
     }
@@ -85,7 +85,7 @@
         object-fit: cover;
     }
 
-    /* about content */
+    /* call to action */
     hr{
         width: 80vw;
         color: lightgrey;

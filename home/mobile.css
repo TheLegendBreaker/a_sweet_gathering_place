@@ -43,12 +43,16 @@
         justify-content: space-evenly;
         list-style-type: none;
     }   
+    #menu i.close-menu {
+	padding: 5px;
+    }
     #menu li {
         font-size: 20px;
         margin: 5px;
     }
     /* title */
     h1{
+        font-family: blackwood_castle;
         margin: 15vh 18px 0;
     }
 

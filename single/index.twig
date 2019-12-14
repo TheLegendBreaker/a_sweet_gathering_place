@@ -1,7 +1,7 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% includeCssFile ""~siteUrl~"/single/style.css" %}
+    {% do view.registerCssFile(""~siteUrl~"/single/style.css") %}
 {% endblock %}
 
 {% block logo %}
@@ -9,10 +9,10 @@
 {% endblock %}
 
 {% block nav_menu %}
-    <li><a href="../home/index.html">home</a></li>
-    <li><a href="../single/index.html">pervious</a></li>
-    <li><a href="../single/index.html">next</a></li>
-    <li><a href="../about/index.html">about</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="">pervious</a></li>
+    <li><a href="">next</a></li>
+    <li><a href="/about">about</a></li>
 {% endblock %}
 
 {% block main %}
@@ -26,9 +26,7 @@
                 <time>11/11/11</time>
             </figure>
             <p class="headline">{{ entry.headline }}</p>
-            <p class="description">
                 {{ entry.copy }}
-            </p>
             <nav class="entry-nav">
                 <a href="" class="previous press">previous</a>
                 <a href="index.html" class="next press">
@@ -40,5 +38,5 @@
 {% endblock %}
 
 {% block javascript %}
-    {% includeJsFile ""~siteUrl~"/single/main.js" %}
+    {% do view.registerJsFile(""~siteUrl~"/single/main.js") %}
 {% endblock %}

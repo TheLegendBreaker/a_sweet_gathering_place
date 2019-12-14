@@ -1,7 +1,7 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% includeCssFile ""~siteUrl~"/home/style.css" %}
+    {% do view.registerCssFile(""~siteUrl~"/home/style.css") %}
 {% endblock %}
 
 {% block logo %}
@@ -32,7 +32,7 @@
 	{% for entry in entries %}
         <a href="{{ entry.url }}" class="entry-link">
             <article class="card hoverd">
-                {% for image in entry.image %}
+                {% for image in entry.image.all() %}
                 <img class="img" src="{{ image.url }}" alt="">
                 {% endfor %}
             </article>
@@ -42,5 +42,5 @@
 {% endblock %}
 
 {% block javascript %}
-    {% includeJsFile ""~siteUrl~"/home/main.js" %}
+    {% do view.registerJsFile(""~siteUrl~"/home/main.js") %}
 {% endblock %}

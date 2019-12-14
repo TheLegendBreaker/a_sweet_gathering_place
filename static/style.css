@@ -72,10 +72,10 @@ article.card img{
 footer{
     background-color: white;
     z-index: 300;
-    /* position: absolute; */
+    position: relative;
     display: flex;
     align-self: flex-end;
-    /* bottom: 0; */
+    bottom: 0;
     width: 100vw;
     box-shadow: 0 -8px 30px 5px lightgrey;
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+call to action
+call to action
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/4b8a8366c7.js" crossorigin="anonymous"></script>
-    {% includeCssFile ""~siteUrl~"/static/style.css" %}
+    {% do view.registerCssFile( ""~siteUrl~"/static/style.css") %}
     {% block stylesheets %}
 
     {% endblock %}
@@ -23,8 +25,11 @@
             <ul id="menu" class="inactive"
                 style="display: none;">
                 {% block nav_menu %}
-                
+
                 {% endblock %}
+               <li> 
+                    <i class="close-menu fas fa-chevron-up"></i>
+               </li>
             </ul>
         </menu>
     </nav>
@@ -54,8 +59,8 @@
         </a> -->
     </footer>
 </body>
-{% includeJsFile "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" %}
-{% includeJsFile ""~siteUrl~"/static/main.js" %}
+{% do view.registerJsFile("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js") %}
+{% do view.registerJsFile(""~siteUrl~"/static/main.js") %}
 
 {% block javascript %}
 
