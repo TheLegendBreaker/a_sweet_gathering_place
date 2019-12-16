@@ -1,8 +1,241 @@
-@import "mobile.css";
-@import "tablet.css";
-@import "desktop.css";
+/*--------------- mobile ------------------*/
+@media screen  and (max-width: 700px){
+    body{
+        overflow-x: none;
+    }
+    /* nav bar */
+    nav{
+        padding: 0 15px;
+        padding-top: 10px;
+        height: 70px;
+    }
+    .logo-crop{
+        height: 48px;
+        overflow: hidden;
+    }
+    #logo{
+        position: relative;
+        bottom: 12.6px;
+        max-width: 60px;
+    }
+    nav a{
+        display: flex;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 8px;
+        align-self: center;
+    }
+    menu{
+        height: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        align-self: flex-start;
+        font-size: 40px;
+        color: grey;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    #menu img.close-menu {
+	height: 10px;
+    }
+    #menu li {
+        font-size: 20px;
+        margin: 5px;
+    }
+    /* title */
+    h1{
+        font-family: blackwood_castle;
+        margin: 15vh 18px 0;
+    }
 
-/* responsive animations */
-@import "../static/animations.css";
+    /* archive */
+    section.archive{
+        margin-bottom: 10vh;
+    }
+    section.archive article.card{
+        height: 33vw;
+        width: 33vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+       height : 30px;
+    }
+}
+
+/*---------------- tablet ---------------------*/
+@media screen  and (min-width: 700px){
+    /* nav bar */
+    nav{
+        padding: 0 15px;
+        padding-top: 10px;
+        height: 100px;
+    }
+    .logo-crop{
+        height: 70px;
+        overflow: hidden;
+    }
+    #logo{
+        position: relative;
+        bottom: 19px;
+        max-width: 90px;
+    }
+    nav a{
+        display: flex;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 12px;
+        align-self: center;
+    }
+    menu{
+        height: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        font-size: 60px;
+        color: grey;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    #menu li {
+        font-size: 30px;
+        margin: 10px;
+        align-self: center;
+    }
+    /* title */
+    h1{
+        margin: 15vh 18px 0;
+    }
+
+    /* archive */
+    section.archive{
+        margin-bottom: 10vh;
+    }
+    section.archive article.card{
+        height: 33vw;
+        width: 33vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+        height: 30px;
+    }
+}
+
+/*----------------- desktop ------------------*/
+@media screen  and (min-width: 1020px){
+    /* nav bar */
+    nav{
+        padding: 0 30px;
+        padding-top: 10px;
+        height: 70px;
+    }
+    .logo-crop{
+        height: 50px;
+        overflow: hidden;
+    }
+    #logo{
+        position: relative;
+        bottom: 18px;
+        max-width: 70px;
+    }
+    nav a{
+        display: flex;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 12px;
+        align-self: center;
+    }
+    menu{
+        height: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    #menu li {
+        font-size: 20px;
+        margin: 0 20px;
+        align-self: center;
+    }
+    #menu img.close-menu{
+        display:none;
+    }
+    /* title */
+    h1{
+        font-size: 5vw;
+        margin: 15vh 18px 0;
+    }
+    span.headline{
+        font-size: 1vw;
+    }
+
+    /* archive */
+    section.archive{
+        width: 75vw;
+        margin-bottom: 20vh;
+    }
+    section.archive article.card{
+        height: 15vw;
+        width: 15vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+	height: 4vh;
+    }
+}
+
 
 /*----------------base styling-------------------*/
+
+/* nav */
+#menu li{
+    display: flex;
+    align-items: center;
+}

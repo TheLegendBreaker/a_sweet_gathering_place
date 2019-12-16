@@ -18,16 +18,16 @@ $(window).resize(function(){
     if($(window).width() <= 700){
         $("#m-map").attr("width", "300");
         $("#m-map").attr("height", "300");
-    }else if($(window).width() >= 1020){
+    }if($(window).width() >= 1020){
     	$('#menu').removeAttr('style');
 	$('#menu').removeClass('inactive');
-    }else if($(window).width() <= 1620){
+    }if($(window).width() <= 1620){
         $("#m-map").attr("width", "400");
         $("#m-map").attr("height", "400");
         $("#about-card").prepend($("#about1"));
         $("#about-card").prepend($("#about2"));
-    }else if($(window).width() >= 1620){
-        $("#desk-display").append($("#about1"));
+    }if($(window).width() >= 1620){
+        $("aside").append($("#about1"));
         $("#desk-display").append($("#about2"));
     }
 });
@@ -36,12 +36,13 @@ $(window).resize(function(){
 if($(window).width() <= 700){
     $("#m-map").attr("width", "300");
     $("#m-map").attr("height", "300");
-}else if($(window).width() >= 1020){
+}if($(window).width() >= 1020){
     $('#menu').removeAttr('style');
     $('#menu').removeClass('inactive');
     $("#m-map").attr("width", "500");
     $("#m-map").attr("height", "500");
-}else if($(window).width() >= 1620){
-    $("#desk-display").append($("#about1"));
+}if($(window).width() >= 1620){
+    console.log("third if");
+    $("aside").append($("#about1"));
     $("#desk-display").append($("#about2"));
 }

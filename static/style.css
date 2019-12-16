@@ -1,22 +1,13 @@
-/*-------------------------------font---------------------------------- */
-/*@import "fonts/blackwood_castle_shadow_moz/stylesheet.css";*/
-@import "fonts/blackwood-castle-shadow/stylesheet.css";
-@import "fonts/Blackwood-Castle/stylesheet.css";
-@import "fonts/mont/stylesheet.css";
-
 /*-------------------------base styling----------------------- */
 *{
     padding: 0;
     margin: 0;
 
-    font-family: mont_regular, Arial, Helvetica, sans-serif;
+    font-family: mont, Arial, Helvetica, sans-serif;
 
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-}
-body{
-    height: 100vh;
 }
 /* nav bar */
 nav{
@@ -36,9 +27,6 @@ nav a{
 }
 menu{
     display: inline-block;
-}
-#menu i.close-menu{
-    color: grey;
 }
 /* title and headline */
 h1{
@@ -60,8 +48,8 @@ section.archive{
 
     /* flex */
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
 article.card{
     border: white 3px solid;
@@ -75,16 +63,50 @@ article.card img{
 footer{
     background-color: white;
     z-index: 300;
-    position: relative;
     display: flex;
-    align-self: flex-end;
-    bottom: 0; 
     width: 100vw;
     box-shadow: 0 -8px 30px 5px lightgrey;
 }
 footer a {
     text-decoration: none;
 }
-.sm-icon{
-    color: gray;
+
+/*------------------ basic animations -------------------*/
+.press{
+    transform: scale(1);
+    color: grey;
+    transition: transform  150ms ease-in-out;
+    -moz-transition: transform  150ms ease-in-out;
+    -webkit-transition: transform  150ms ease-in-out;
+
+    transition: color 150ms ease-in-out;
+    -moz-transition: color 150ms ease-in-out;
+    -webkit-transition: color 150ms ease-in-out;
 }
+
+.press:active{
+    color: lightpink;
+    transform: scale(1.1);
+}
+
+.dim{
+    filter: brightness(50%);
+}
+
+/* desktop */
+@media screen and (min-width: 1030px){
+    /* card animations */
+    .hoverd{
+        position: relative;
+        transform: scale(1);
+        transition: transform 150ms ease-in-out;
+        -moz-transition: transform 150ms ease-in-out;
+        -webkit-transition: transform 150ms ease-in-out;
+    }
+    .hoverd:hover {
+        z-index: 100;
+        border: none;
+        transform: scale(1.2);
+    }
+}
+

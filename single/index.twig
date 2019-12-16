@@ -1,10 +1,10 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% do view.registerCssFile(""~siteUrl~"/single/style.css") %}
+    {% do view.registerCssFile("static/single/style.mini.css") %}
 {% endblock %}
 
-{% set params = craft.entries.section('process').orderBy('postDate asc') %}
+{% set params = craft.entries.section('process').orderBy('date asc') %}
 
 {% set previous= entry.getPrev(params) %}
 {% set next= entry.getNext(params) %}
@@ -34,7 +34,7 @@
                 <img src="{{ entry.image.one().url }}" alt="">
                 <figcaption>{{ entry.title }}
                 </figcaption>
-                <time>{{entry.postDate | date("M d, Y") }}</time>
+                <time>{{entry.date | date("M d, Y") }}</time>
             </figure>
             <p class="headline">{{ entry.headline }}</p>
                 {{ entry.copy }}
@@ -53,5 +53,5 @@
 {% endblock %}
 
 {% block javascript %}
-    {% do view.registerJsFile(""~siteUrl~"/single/main.js") %}
+    {#{% do view.registerJsFile(""~siteUrl~"/single/main.js") %}#}
 {% endblock %}

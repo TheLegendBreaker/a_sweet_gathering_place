@@ -1,10 +1,621 @@
-@import "mobile.css";
-@import "tablet.css";
-@import "laptop.css";
-@import "desktop.css";
+/*------------------- mobile ----------------------*/
+@media screen  and (max-width: 700px){
+    /* nav bar */
+    nav{
+        padding: 5px 15px;
+        border-bottom: lightgray solid 2px;
+        height: 55px;
+    }
+    h1.main-title{
+        color: black;
+        font-size: 5vw;
+        letter-spacing: 2px;
+    }
+    nav a{
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 8px;
+        align-self: center;
+    }
+    menu{
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        align-self: flex-start;
+        font-size: 40px;
+        color: grey;
+    }
+    #menu{
+        position: relative;
+        top: 50px;
+        background-color: white;
+        list-style-type: none;
+        padding: 20px;
+        -moz-box-shadow:    inset 0 0 10px grey;
+        -webkit-box-shadow: inset 0 0 10px grey;
+        box-shadow:         inset 0 0 20px grey;
 
-/* responsive animations */
-@import "../static/animations.css";
+    }
+    #menu li {
+        font-size: 4vw;
+    }
+    #menu li a{
+        margin: 10px auto;
+    }
+    #menu i.close-menu{
+        width: 100%;
+        text-align: center;
+    }
+    #menu.inactive{
+        display: none;
+    }
+
+    /* main content contianer */
+    main{
+        margin: 10vh 0 5vh 0;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* story */
+    section.visual-content{
+        width: 100vw;
+    }
+    section.visual-content article.card{
+        width: 90vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    p.cta{
+        width: 45vw;
+    }
+    div.vid{
+        background-color: lightpink;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    section.visual-content img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* call to action */
+    hr{
+        width: 80vw;
+        color: lightgrey;
+        margin: 0 auto;
+    }
+    section.about{
+        width: 100vw;
+    }
+    section.about article.card{
+        display: flex;
+        flex-direction: column;
+
+        width: 90vw;
+        margin: 20px auto;
+    }
+    #about1{
+        order: 1;
+    }
+    #about2{
+        order:3;
+    }
+    aside{
+        display:none;
+    }
+    div.map{
+        order:2;
+        background-color: lightpink;
+        margin: 20px auto;
+        padding: 0 auto;
+    }
+    nav.about-nav{
+        margin-top: 30px;
+        order:4;
+        border:none;
+        position: static;
+        padding: 0 15vw;
+
+    }
+    nav.about-nav a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:auto;
+    }
+    nav.about-nav small{
+        margin-top: 2px;
+        width: 85px;
+        text-align: center;
+    }
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+    .sm-icon{
+        font-size: 30px;
+    }
+}
+
+/*-------------------- tablet --------------------*/
+@media screen  and (min-width: 700px){
+    /* nav bar */
+    nav{
+        padding: 0 15px;
+        padding-top: 5px;
+        height: 70px;
+        border-bottom: lightgray solid 2px;
+    }
+    h1.main-title{
+        color: black;
+        font-size: 2.5vw;
+        letter-spacing: 1.5px;
+    }
+    nav a{
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 8px;
+        align-self: center;
+    }
+    menu{
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        align-self: flex-start;
+        font-size: 40px;
+        color: grey;
+    }
+    #menu{
+        position: relative;
+        top: 70px;
+        padding: 20px;
+        background-color: white;
+        list-style-type: none;
+        -moz-box-shadow:    inset 0 0 10px grey;
+        -webkit-box-shadow: inset 0 0 10px grey;
+        box-shadow:         inset 0 0 20px grey;
+    }
+    #menu li {
+        font-size: 4vw;
+    }
+    #menu li a{
+        margin: 10px auto;
+    }
+    #menu i.close-menu{
+        width: 100%;
+        text-align: center;
+    }
+    #menu.inactive{
+        display: none;
+    }
+
+    /* main content contianer */
+    main{
+        margin: 10vh 0 5vh 0;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* story */
+    section.visual-content{
+        width: 100vw;
+    }
+    section.visual-content article.card{
+        width: 90vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    p.cta{
+        width: 45vw;
+        align-self: center;
+    }
+    div.vid{
+        background-color: lightpink;
+        height: 280px;
+        width: 280px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* -moz-box-shadow:    inset 0 0  10px 10px white;
+        -webkit-box-shadow: inset 0 0  10px 10px white; */
+        /* box-shadow:         inset 0 0  8px 10px white; */
+    }
+    section.visual-content img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* call to action */
+    hr{
+        width: 80vw;
+        color: lightgrey;
+        margin: 0 auto;
+    }
+    section.about{
+        width: 100vw;
+    }
+    section.about article.card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        width: 90vw;
+        margin: 20px auto;
+    }
+    #about1{
+        width: 40vw;
+        order:1;
+        align-self: flex-start;
+    }
+    #about2{
+        width: 40vw;
+        order:1;
+        align-self: flex-start;
+    }
+    aside{
+        display: none;
+    }
+    div.map{
+        order: 2;
+    }
+    nav.about-nav{
+        margin-top: 50px;
+        order: 4;
+        align-self: flex-end;
+        flex: 1 0 100%;
+  }
+    div.map{
+        background-color: lightpink;
+        margin: 20px auto;
+    }
+    nav.about-nav{
+        border:none;
+        position: static;
+        padding: 0 17vw;
+
+    }
+    nav.about-nav a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:auto;
+    }
+    nav.about-nav small{
+        margin-top: 2px;
+        width: 85px;
+        text-align: center;
+    }
+    /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+}
+
+/*---------------------- laptop -------------------*/
+@media screen  and (min-width: 1020px){
+    /* nav bar */
+    nav{
+        padding: 5 15px;
+        padding-top: 5px;
+        height: auto;
+        border-bottom: lightgray solid 2px;
+    }
+    h1.main-title{
+        color: black;
+        font-size: 2.5vw;
+        letter-spacing: 1.5px;
+    }
+    nav a{
+        width: 23vw;
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 8px;
+        align-self: center;
+    }
+    menu{
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        display: none;
+    }
+    #menu{
+        list-style-type: none;
+        position: static;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        -moz-box-shadow: 0 0 0 0 white;
+        -webkit-box-shadow:0 0 0 0 white;
+        box-shadow: 0 0 0 0 white;
+
+    }
+    #menu img.close-menu{
+        display: none;
+    }
+    #menu li {
+        font-size: 2vw;
+    }
+    #menu li a{
+        width: auto;
+        margin: 0 20px;
+    }
+
+    /* main content contianer */
+    main{
+        margin: 10vh 0 5vh 0;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* story */
+    section.visual-content{
+        width: 100vw;
+    }
+    section.visual-content article.card{
+        width: 90vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    p.cta{
+        width: 45vw;
+        align-self: center;
+    }
+    div.vid{
+        background-color: lightpink;
+        height: 280px;
+        width: 280px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* -moz-box-shadow:    inset 0 0  10px 10px white;
+        -webkit-box-shadow: inset 0 0  10px 10px white; */
+        /* box-shadow:         inset 0 0  8px 10px white; */
+    }
+    section.visual-content img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* call to action */
+    hr{
+        width: 80vw;
+        color: lightgrey;
+        margin: 0 auto;
+    }
+    section.about{
+        width: 100vw;
+    }
+    section.about article.card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        width: 90vw;
+        margin: 20px auto;
+    }
+    #about1{
+        width: 40vw;
+        order:1;
+        align-self: flex-start;
+    }
+    #about2{
+        width: 40vw;
+        order:1;
+        align-self: flex-start;
+    }
+    aside{
+        display: none;
+    }
+    div.map{
+        order: 2;
+    }
+    nav.about-nav{
+        margin-top: 50px;
+        order: 4;
+        align-self: flex-end;
+        flex: 1 0 100%;
+    }
+    div.map{
+        background-color: lightpink;
+        margin: 20px auto;
+        /* break */
+    }
+    nav.about-nav{
+        border:none;
+        position: static;
+        padding: 0 17vw;
+
+    }
+    nav.about-nav a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:auto;
+    }
+    nav.about-nav small{
+        margin-top: 2px;
+        width: 85px;
+        text-align: center;
+    }
+    /* footer */
+    footer a{
+        margin: 0 10px;
+    }
+}
+/*----------------- desktop -------------------*/
+@media screen  and (min-width: 1620px){
+    /* nav bar */
+    nav.single-nav{
+        padding: 0 40px;
+        padding-top: 5px;
+        height: 10vh;
+        border-bottom: lightgrey solid 3px;
+    }
+    h1.main-title{
+        color: black;
+        font-size: 2vw;
+        margin: none;
+    }
+    nav a{
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+    }
+    small{
+        color: grey;
+        font-size: 8px;
+        align-self: center;
+    }
+    menu{
+        display: flex;
+        align-self: center;
+    }
+    #hamburger{
+        display: none;
+    }
+    #menu{
+        position: static;
+        height: 100%;
+        width: auto;
+        display: flex;
+        list-style-type: none;
+    }
+    #menu li {
+        font-size: 1vw;
+    }
+    #menu li a{
+        width: auto;
+        margin: 10px;
+    }
+    #menu.inactive{
+        display: flex;
+    }
+    /* main content contianer */
+    main{
+        margin: 20vh 0 5vh 0;
+        display: flex;
+        flex-direction: row;
+        /* flex-flow: row wrap; */
+        justify-content: space-evenly;
+    }
+    section{
+        display: inline-block;
+        /* outline: lightblue dotted 3px; */
+    }
+
+    /* story */
+    section.visual-content{
+        width: 45vw;
+    }
+    section.visual-content article.card{
+        margin: 20px auto;
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    p.cta{
+        width: 20vw;
+        align-self: center;
+    }
+    div.vid{
+        background-color: lightpink;
+        height: 380px;
+        width: 380px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* -moz-box-shadow:    inset 0 0  10px 10px white;
+        -webkit-box-shadow: inset 0 0  10px 10px white; */
+        /* box-shadow:         inset 0 0  8px 10px white; */
+    }
+    section.visual-content img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* call to action */
+    hr{
+        display: none;
+    }
+    section.about{
+
+        width: 45vw;
+    }
+    section.about article.card{
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        margin: 20px auto;
+    }
+    #about1{
+        margin: 20px 0;
+        width: auto;
+    }
+    #about2{
+        margin: 20px 0;
+        width: auto;
+    }
+    aside{
+        align-self: center;
+        display: flex;
+        flex-flow: column wrap;
+        width: 20vw;
+    }
+    nav.about-nav{
+        margin-top: 50px;
+        order: 4;
+        align-self: flex-end;
+        padding: 0;
+        flex: 1 0 100%;
+    }
+    div.map{
+        background-color: lightpink;
+    }
+        /* footer */
+    footer{
+        padding: 12px 15px;
+        justify-content: space-evenly;
+    }
+    footer a{
+        margin: 0 10px;
+    }
+}
+
+/*---------------------- tv --------------------------*/
+@media screen and (min-width: 2000px){
+    main{
+        height: 71vh;
+    }
+}
 
 /*---------------base page styling -------------*/
 /*nav bar*/
@@ -12,4 +623,10 @@ h1.main-title{
     font-family: blackwood_castle;
     letter-spacing: 2px;
 }
-
+/* footer */
+.sm-icon{
+        height: 30px;
+}
+#menu img.close-menu{
+    height: 10px;
+}

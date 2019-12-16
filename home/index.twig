@@ -1,7 +1,7 @@
 {% extends '_layout' %}
 
 {% block stylesheets %}
-    {% do view.registerCssFile(""~siteUrl~"/home/style.css") %}
+   {% do view.registerCssFile("static/home/style.mini.css") %}
 {% endblock %}
 
 {% block logo %}
@@ -12,8 +12,8 @@
 {% endblock %}
 
 {% block nav_menu %}
-    <li><a href="/">home</a></li>
-    <li><a href="/about">about</a></li>
+    <li><a class="press" href="/">home</a></li>
+    <li><a class="press" href="/about">about</a></li>
 {% endblock %}
 
 {% block main %}
@@ -25,6 +25,7 @@
 
         {% set entries =  craft.entries()
             .section('process')
+            .orderBy( 'date asc')
             .limit(null)
             .all()
         %}
@@ -33,7 +34,7 @@
         <a href="{{ entry.url }}" class="entry-link">
             <article class="card hoverd">
                 {% for image in entry.image.all() %}
-                <img class="img" src="{{ image.url }}" alt="">
+                <img class="img" src="{{ image.getUrl('home') }}" alt="">
                 {% endfor %}
             </article>
         </a>
@@ -42,5 +43,5 @@
 {% endblock %}
 
 {% block javascript %}
-    {% do view.registerJsFile(""~siteUrl~"/home/main.js") %}
+    {% do view.registerJsFile("static/home/main.js") %}
 {% endblock %}
