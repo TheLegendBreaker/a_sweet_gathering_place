@@ -70,10 +70,11 @@
         width: 90vw;
         margin: 20px auto;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+	align-items: center;
     }
     p.cta{
-        width: 45vw;
+        width: auto;
     }
     div.vid{
         background-color: lightpink;
@@ -81,6 +82,7 @@
         width: 180px;
         border-radius: 50%;
         overflow: hidden;
+	margin: 5vh 0;
     }
     section.visual-content img{
         height: 100%;
@@ -588,7 +590,7 @@
         align-self: center;
         display: flex;
         flex-flow: column wrap;
-        width: 20vw;
+        width: 15vw;
     }
     nav.about-nav{
         margin-top: 50px;
